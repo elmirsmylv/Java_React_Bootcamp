@@ -1,6 +1,5 @@
 package Entities;
 
-import java.util.Date;
 
 import Abstract.Entity;
 
@@ -8,7 +7,7 @@ public class Customer implements Entity {
     private int Id;
     private String FirstName;
     private String LastName;
-    private Date DataOfBirth;
+    private int DataOfBirth;
     private long NationalityId;
 
     public int getId() {
@@ -35,11 +34,11 @@ public class Customer implements Entity {
         LastName = lastName;
     }
 
-    public Date getDataOfBirth() {
+    public int getDataOfBirth() {
         return DataOfBirth;
     }
 
-    public void setDataOfBirth(Date dataOfBirth) {
+    public void setDataOfBirth(int dataOfBirth) {
         DataOfBirth = dataOfBirth;
     }
 

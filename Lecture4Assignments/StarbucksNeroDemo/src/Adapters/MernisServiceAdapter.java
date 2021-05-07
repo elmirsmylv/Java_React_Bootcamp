@@ -11,7 +11,7 @@ public class MernisServiceAdapter implements CustomerCheckService {
     public boolean CheckIfRealPerson(Customer customer) throws RemoteException{
 
         KPSPublicSoapProxy client = new KPSPublicSoapProxy();
-        return client.TCKimlikNoDogrula(customer.getNationalityId(), customer.getFirstName().toUpperCase(), customer.getLastName().toUpperCase(), customer.getDataOfBirth().getYear()); 	
+        return client.TCKimlikNoDogrula(customer.getNationalityId(), customer.getFirstName().toUpperCase(), customer.getLastName().toUpperCase(), customer.getDataOfBirth()); 	
         
     }
 }
