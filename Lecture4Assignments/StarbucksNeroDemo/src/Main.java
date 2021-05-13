@@ -14,10 +14,10 @@ public class Main {
         BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
         Customer customer1 = new Customer();
         customer1.setId(1);
-        customer1.setFirstName("Fatih");
-        customer1.setLastName("Deniz");
-        customer1.setDataOfBirth(1986);
-        customer1.setNationalityId(16807467380L);
+        customer1.setFirstName("Albert");
+        customer1.setLastName("King");
+        customer1.setDataOfBirth(1944);
+        customer1.setNationalityId(11111111111L);
          
         customerManager.Save(customer1);
         
